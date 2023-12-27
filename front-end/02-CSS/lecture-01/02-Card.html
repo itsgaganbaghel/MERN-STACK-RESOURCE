@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>card-css</title>
+        <style>
+            *{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+      
+        .content{
+            position: relative;
+            width: 500px;
+            height: 475px;
+            background-color: #fff;
+            margin: 70px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 7px 1px rgb(130, 126, 126) ;
+            
+        }
+        .main{
+            position: absolute;
+            left: 25px;
+            top: 30px;
+        }
+        .course{
+            width: 450px;
+            margin: auto;
+        }
+        img{
+            border-radius: 0px;
+        }
+        h1{
+            font-size: 25px;
+            margin: 20px 0px;
+        }
+        .price{
+            display: flex;
+            gap: 30px;
+            justify-content: left;
+            align-items: center;
+            font-size: 20px;
+            width: 70%;
+            margin-top: 15px;
+        }
+        p1{
+            color: rgb(94, 94, 237);
+        }
+        p2{
+            color: rgb(102, 99, 99);
+        }
+        button{
+            background:rgb(76, 193, 61);
+            font-size: large;
+            color: white;
+            border: 2px solid rgb(54, 213, 62);
+            height: 40px;
+            width: 80px;
+            border-radius: 5px;
+        }
+        hr{
+            width: 60%;
+            color: rgb(225, 230, 234);
+        }
+    </style>
+     
+</head>
+<body>
+    <div class="content">
+       <div class="main">
+        <div class="course">
+            <img src="./img/we-dev.jpg" alt="Dot-Batch" width="450px">
+            <h1>Web Development  Master Course @dot Batch </h1>
+        </div>
+        <hr>
+        <div class="price">
+            <p1>&#x20B9;4500</p1>
+            <p2><del>&#x20B9;6999</del> </p2>
+            <button>42% off</button>
+        </div>
+       </div>
+        
+    </div>
+</body>
+</html>

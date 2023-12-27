@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: aliceblue;
+    width: 90vw;
+    height: 950px;
+    margin: 20px auto ;
+
+    /* background-color: antiquewhite; */
+    border: 1px solid black;
+}
+
+.container h1 {
+    height:5% ;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    padding: 1%;
+    /* border: 1px solid black; */
+}
+
+#main h2{
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container .content{
+    /* border: 1px solid black; */
+    height: 90%;
+    width: 100%;
+    padding: 1%;
+
+    display: grid;
+    grid-template-columns: 1fr 25%;
+    grid-template-rows: 1fr;
+    grid-gap: 5%;
+
+    grid-template-areas:  
+    "mn sd"
+    "mn sd" ;
+}
+
+#main{
+    grid-area: mn;
+    /* background-color: pink; */
+}
+
+#sidebar{
+    grid-area: sd;
+}
+
+p,p1,li{
+    font-size: 16px;
+    text-align: justify;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 18px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.imp{
+    border: 1px solid black;
+    margin-bottom: 1%;
+    padding: 1%;
+}
+
+li{
+    margin: 1% 5%;
+}
+.heading , sub-heading{
+    margin-bottom: 2%;
+}
+
+button{
+    margin: 2% 2%;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 2px;
+}
+
+.Archieves , .elsewhere {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    margin-bottom: 5%;
+}
+
+h3 {
+   margin: 2% 0;
+   font-size: 25px;
+   font-weight: 700;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Archieves a , .elsewhere a{
+    text-decoration: none;
+    font-weight: 600 ;
+    margin-left: 2%;
+    }
+
+.about{
+    background: rgb(196, 225, 236);
+    padding: 4%;
+    border-radius: 10px;
+    margin-bottom: 3%;
+
+}
+

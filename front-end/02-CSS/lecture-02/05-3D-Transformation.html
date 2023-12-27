@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: skyblue;
+            border: 1px solid black;
+        }
+        .translate{
+            transform:perspective(15px) translateZ(-10px) ;
+        }
+
+        .scaled{
+            margin: 250px;
+            transform: perspective(15px) scaleZ(1) rotateX(0deg) rotateY(10deg) ;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="static">static</div>
+    <div class="translate">translate</div>
+    <div class="scaled">scaled</div>
+</body>
+</html>

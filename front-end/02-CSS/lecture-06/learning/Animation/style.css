@@ -1,0 +1,47 @@
+.container{
+    height: 500px;
+    width: 1500px;
+    background-color: green;
+    border: 10px solid red ;
+    display: flex;
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    background-color: aqua;
+    border: 3px solid orange;
+    margin: 20px;
+
+    animation-name: gagashi;
+    animation-delay: 1s;
+    animation-duration: 5s;
+    animation-iteration-count: 4;
+    animation-timing-function: ease-in;
+}
+
+@keyframes gagashi {
+    30%{
+        width: 200px;
+    }
+    50%{
+        width: 500px;
+        background-color: pink;
+    }
+    80%{
+        width: 1000px;
+        background-color: brown;
+    }
+    
+}
+/* <!-- Animation & keyframe
+1. animation name
+2. animation-duration
+3. animation-iteration
+4. animation-fill-mode 
+5. animation-timinig-function 
+6. animation-delay 
+7. animation-direction  --> */
+
+
+

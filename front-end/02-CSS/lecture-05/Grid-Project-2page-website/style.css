@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 90vw;
+    height: 950px;
+    margin: 20px auto ;
+
+    background-color: antiquewhite;
+    border: 1px solid black;
+}
+
+.container h1 {
+    height:10% ;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    padding: 1%;
+    border: 1px solid black;
+}
+.container .content{
+    background-color: aliceblue;
+    border: 1px solid black;
+    height: 90%;
+    width: 100%;
+    padding: 1%;
+
+    /* flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 5%;
+}
+@media screen and (min-width: 480px) {
+    .content {
+      background-color: rgb(0, 0, 0);
+    }
+  }
+
+.card{
+    border: 1px solid #757171;
+    box-shadow: 0px 0px 20px #757171 ;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: 1fr 20%;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+    margin: 0 15px;
+}
+
+
+
+.card .txt{
+    display: flex;
+    flex-direction: column;
+    /* justify-content:center; */
+    padding: 15px 15px ;
+    /* background-color: pink; */
+    /* align-self: flex-start; */
+    /* align-items: end; */
+}
+
+.card h3{
+    color: rgb(14, 86, 162);
+    font-size: 20px;
+}
+.card P1{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: 600;
+    margin: 1% 0 0 0;
+
+}
+
+.card P2{
+    font-weight:600;
+    font-size: 12px;
+
+}
+
+.card P3{
+    font-weight: 500;
+    font-size: 18px;
+    margin: 2% 0;
+    letter-spacing: 1px;
+
+}
+
+.link{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.link a{
+    text-decoration: none!important;
+    color: rgb(14,86,162);
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 10px;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}

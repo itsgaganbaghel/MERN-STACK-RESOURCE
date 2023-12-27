@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient </title>
+    <style>
+        .box{
+            border: 1px solid black;
+            height: 150px;
+            width: 150px;
+            /* Default  */
+            background-image: linear-gradient(red,skyblue);
+            /* Directional */
+            background-image: linear-gradient(to right,  red,skyblue);
+            background-image: linear-gradient(to left,  red,skyblue);
+            background-image: linear-gradient(to top right,  red,skyblue);
+            background-image: linear-gradient(to top left,  red,skyblue);
+            background-image: linear-gradient(to bottom left,  red,skyblue);
+            background-image: linear-gradient(to bottom right,  red,skyblue);
+            background-image: linear-gradient(to top left , red , pink, orange, yellow);
+            /* transparency  */
+            background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgb(2, 217, 255));
+        }
+
+        .mydiv{
+            border: 1px solid black;
+            height: 200px;
+            width: 150px;
+            margin-top: 20px;
+            background-image: radial-gradient(circle, red,orange,blue);
+            /* background-image: radial-gradient( yellow 5%, orange 30%, red 50%); */
+
+        }
+
+        .conic{
+            border: 1px solid black;
+            height: 150px;
+            width: 150px;
+            margin-top: 20px;
+            background-image: conic-gradient(red, yellow, green);
+            background-image: conic-gradient(yellow 60deg,green 120deg,pink 180deg, red 240deg,orange 300deg,blue 360deg);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Gagan Baghel
+    </div>
+
+    <div class="mydiv"></div>
+    <div class="conic">
+
+    </div>
+</body>
+</html>

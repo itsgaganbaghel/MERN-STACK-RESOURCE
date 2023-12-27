@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            border: 1px solid black;
+            margin: 20px;
+            /* display: flex; */
+            /* gap: 10px; */
+            position: relative;
+            height: 500px;
+            width: 500px;
+
+        }
+        .bg{
+            border: 1px solid black;
+            background-color: pink;
+            height: 1000px;
+            width: 100vw;
+            
+        }
+        .box{
+            display: inline-block; 
+            /* - create a additional; spaces b/w div's  */
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+            background-color: skyblue;
+        }
+        #box1{
+            position: fixed;
+            /* top: 200px; */
+        }
+        #box2{
+            /* position:absolute; */
+            top: 110px;
+        }
+
+        #box3{
+            position: relative;
+            /* top: 200px; */
+        }
+
+        #box4{
+            position: absolute
+            /* top: 200px; */
+        }
+
+    </style>
+</head>
+<body>
+   <div class="bg">
+    <div class="main">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+   </div>
+</body>
+</html>
