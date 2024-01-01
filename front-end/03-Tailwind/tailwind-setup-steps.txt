@@ -1,0 +1,18 @@
+npm install -D tailwindcss postcss autoprefixer vite
+
+npx tailwindcss init  -p
+
+tailwind.config.js -> content : ["*"],
+
+package.json -> 
+
+"scripts": {
+    "start": "vite"
+  },
+
+
+create -> stle.css and write 
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
