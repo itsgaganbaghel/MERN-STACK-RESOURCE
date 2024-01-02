@@ -8,7 +8,7 @@ console.log(items);
 let item = mapArray.map(value => 'student-marks: ' + value);
 console.log(item);
 
-// value - kuch bhi likh shakte hai . 
+// value ki jaga - kuch bhi likh shakte hai . 
 let mapObjCreation = num.map(function(value){
     return {poitive_numbers : value ,
             double_numbers  : value * 2 };
