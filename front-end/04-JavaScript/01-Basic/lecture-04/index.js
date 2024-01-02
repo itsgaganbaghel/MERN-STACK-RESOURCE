@@ -109,7 +109,70 @@ function interest(p,r=5,t=10){ // we start assigning default values from the r t
  }
  console.log(person);
 
+                                                // {
+ // this is the read only function
  function fullName(){
     return `${person.fname} ${person.lname}`;
  }
  console.log(fullName)
+//  this is the read only function                 } 
+
+// getter : access properties 
+// setter : chnage or muted properties
+
+// let person1 = {
+//     fname : 'Gagan',
+//     lname : 'Baghel',
+//     get fullName(){
+//         return `${person1.fname} ${person1.lname}`;
+//     },
+//     set fullName(value){
+//         let parts = value.split(' ');
+//         this.fname =parts[0];
+//         this.lname =parts[1];
+//     }
+// };
+// console.log(person1.fullName);  // getter call 
+
+// console.log(person1.fullName['codebygagn']);  // not working - wrong way 
+
+// person1.fullName = 'IG Codebygagan';
+// console.log(person1.fullName);
+
+                // Try and Catch -> Error handling 
+
+// syntax:
+// try {
+//     // code  - it contains the code in which there is a change of occuring an error
+// // }
+// catch(e){
+//     alert('you have sent a number in fullName ') ; // custom mssg 
+//     // error handling code
+// }
+
+let person1 = {
+    fname : 'Gagan',
+    lname : 'Baghel',
+    get fullName(){
+        return `${person1.fname} ${person1.lname}`;
+    },
+    set fullName(value){
+        if(typeof value !== 'string'){
+            throw new Error('You hav not sent a string ');
+        }
+        let parts = value.split(' ');
+        this.fname =parts[0];
+        this.lname =parts[1];
+    }
+};
+
+try {
+    person1.fullName = 'IG Codebygagan' ; // print ig codebygagan 
+    // person1.fullName = true; // alert - error 
+}
+catch(err) {
+    alert(err) ;
+
+}
+// person1.fullName = 'IG Codebygagan';
+console.log(person1.fullName);
