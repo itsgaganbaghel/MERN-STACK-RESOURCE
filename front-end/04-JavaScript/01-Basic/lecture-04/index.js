@@ -166,13 +166,23 @@ let person1 = {
     }
 };
 
-try {
+try { // if there is any error occur in the try code then it goes to the catch code directly
     person1.fullName = 'IG Codebygagan' ; // print ig codebygagan 
     // person1.fullName = true; // alert - error 
 }
 catch(err) {
-    alert(err) ;
+    alert(err) ; // err -  is the error that comes from the the get as a string 
 
 }
 // person1.fullName = 'IG Codebygagan';
 console.log(person1.fullName);
+
+
+                            // scope 
+
+// let - scope is - local 
+// var - scope is - global 
+
+// in function  :
+// let - scope is - local 
+// var - scope is - global 
