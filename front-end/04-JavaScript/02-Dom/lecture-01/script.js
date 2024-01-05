@@ -32,3 +32,6 @@ lec.style.color = " yellow ";
 // lec.textContent = "<br>" ;  // this will show as it is the tag written  between the tag.
 console.log(lec)
 
+// Adding new element / content in the html code by js ( directly ) - by using -.createElement
+
+
