@@ -23,11 +23,11 @@ let lec = document.querySelector("h2");
 lec.innerHTML = "Lecture number 01 "; 
 console.log(lec);
 
-// css
-lec.style.backgroundColor ="  black ";
-lec.style.color = " yellow ";
+// lec.outerHTML = " Demo try fo outerHtml " ;
+// console.log(lec);
 
-// innerHtml vs textcontent
+
+// innerHtml vs textContent
 // lec.innerHTML =  "<br>"// this will try to convert the tag for represeting the content 
 // lec.textContent = "<br>" ;  // this will show as it is the tag written  between the tag.
 console.log(lec)
@@ -35,3 +35,9 @@ console.log(lec)
 // Adding new element / content in the html code by js ( directly ) - by using -.createElement
 
 
+
+
+
+// css
+lec.style.backgroundColor ="  black ";
+lec.style.color = " yellow ";
