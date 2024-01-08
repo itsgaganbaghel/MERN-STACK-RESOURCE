@@ -7,4 +7,5 @@ function addTwoNumbers(a,b)
 
 let num1 = Math.round(Math.random() * 1000);
 let num2 = Math.round(Math.random() * 1000);
+// let num2 = Math.round(Math.random() * 1000);
 console.log(addTwoNumbers(num1,num2));   
