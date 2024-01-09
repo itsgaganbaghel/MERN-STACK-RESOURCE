@@ -35,10 +35,10 @@
 
 // by this we can't remove eventlistener because in js functions are also an objects 
  
-function print(){
-    console.log ('I click on the display');
-}
-document.addEventListener('click' , print) ;
+// function print(){
+    // console.log ('I click on the display');
+// }
+// document.addEventListener('click' , print) ;
 // if you want to check or display the all EventListener by - monitor(document)
 // document.removeEventListener('click' , print) ;
 
@@ -51,16 +51,27 @@ document.addEventListener('click' , print) ;
 // same type , same target , same function 
 
 // the event object 
-const content  =  document.querySelector('#p1');
-content.addEventListener('click',function(event) {
-    console.log(event);
-})
+// const content  =  document.querySelector('#p1');
+// content.addEventListener('click',function(event) {
+//     console.log(event);
+// })
 
 // when addEventListener RUN  their function then addEventListener get an event object that content lots of information 
 
-let link = document.querySelectorAll('link') ;
+// let link = document.querySelectorAll('link') ;
 
-let thirdLink = link[2];
+
+// default event - preventDefault 
+// let thirdLink = link[2];
+// console.log(thirdLink)
+// thirdLink.addEventListener('click' , function (event){
+//     event.preventDefault();
+//     console.log('maja aya ');
+// });
+
+// by this link number 3 doesn't work as a link 
+
+let thirdLink = link[3];
 console.log(thirdLink)
 thirdLink.addEventListener('click' , function (event){
     event.preventDefault();
