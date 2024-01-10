@@ -71,9 +71,78 @@
 
 // by this link number 3 doesn't work as a link 
 
-let thirdLink = link[3];
-console.log(thirdLink)
-thirdLink.addEventListener('click' , function (event){
-    event.preventDefault();
-    console.log('maja aya ');
+// let thirdLink = link[2];
+// console.log(thirdLink)
+// thirdLink.addEventListener('click' , function (event){
+//     event.preventDefault();
+//     console.log('maja aya ');
+// });
+
+// let myDiv = document.createElement('div');
+
+// for(let i=1 ; i<=100 ; i++ ){
+//     let newElement = document.createElement('p');
+//     newElement.textContent = 'This is a para ' + i ;
+
+//     newElement.addEventListener('click' , function(event){
+//         console.log('I have clicked on para ');
+//     } ) ;
+//     myDiv.appendChild(newElement);
+// }
+// document.appendChild(myDiv); -- errror -
+// document.body.appendChild(myDiv);  // because document can only have a html element  and nothing else . all other elements are child of <html> element 
+
+// optimize the above code - in every iteration we make new object for eventlistener that take a space of memory 
+// we make only one event listner and add them with DIV Because all p tag are child of div 
+
+// let myDiv = document.createElement('div');
+
+// function parastatus (event){
+//     console.log('I have clicked on the Div ');
+// }
+// myDiv.addEventListener('click' , parastatus ) ;
+
+// for(let i=1 ; i<=100 ; i++ ){
+//     let newElement = document.createElement('p');
+//     newElement.textContent = 'this is paragraph ' + i ;
+
+//     myDiv.appendChild(newElement)
+// }
+// document.body.appendChild(myDiv);
+
+// but by this we loose our individual access of the p tags  
+// for this we use event.Target.textcontent
+
+// let myDiv = document.createElement('div');
+
+// function parastatus (event){
+//     console.log('I have clicked on the ' + event.target.textContent );
+// }
+// myDiv.addEventListener('click' , parastatus ) ;
+
+// for(let i=1 ; i<=100 ; i++ ){
+//     let newElement = document.createElement('p');
+//     newElement.textContent = 'paragraph ' + i ;
+
+//     myDiv.appendChild(newElement)
+// }
+// document.body.appendChild(myDiv);
+
+// let element = document.querySelector('#wrapper');
+// element.addEventListener('click' , function(event){
+//     console.log('hello ' + event.target.textContent)
+// });
+
+// if we click in the span - output - helloxyz 
+// if we click in the p    - output - hello para - xyz
+
+// if we want listener works only for  (filter) span then 
+
+let element = document.querySelector('#wrapper');
+element.addEventListener('click' , function(event){
+    // if(event.target.tagName ==='SPAN')
+    if(event.target.nodeName ==='SPAN')
+    {
+    console.log('hello ' + event.target.textContent)
+    }
 });
