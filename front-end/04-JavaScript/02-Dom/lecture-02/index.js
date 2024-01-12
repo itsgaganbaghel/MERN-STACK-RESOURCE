@@ -1,6 +1,7 @@
+// console.log(monitorEvents(document));
 
 // how to add event listener 
-{/* <event_target>.addEventListener(<event to do for> , < function (){ */}
+//  <event_target>.addEventListener(<event to do for> , < function (){ 
     // code here will be executed when the event is triggered.
 // }); 
 // document.addEventListener( 'click' , function(){
@@ -14,7 +15,7 @@
 
 // making function for multiple iteration 
 // function eventFunction() {
-//     // console.log('I have clicked on the document ');
+//     console.log('I have clicked on the document ');
 //     let content = document.querySelector('h1'); 
 
 //     content.addEventListener('click' , function(){
@@ -23,6 +24,9 @@
 // } 
 
 // document.addEventListener('click' , eventFunction);
+
+
+
 
 // remove addEventListener
 
@@ -58,16 +62,16 @@
 
 // when addEventListener RUN  their function then addEventListener get an event object that content lots of information 
 
-// let link = document.querySelectorAll('link') ;
+let link = document.querySelectorAll('a') ;
 
 
 // default event - preventDefault 
-// let thirdLink = link[2];
-// console.log(thirdLink)
-// thirdLink.addEventListener('click' , function (event){
-//     event.preventDefault();
-//     console.log('maja aya ');
-// });
+let thirdLink = link[2];
+console.log(thirdLink)
+thirdLink.addEventListener('click' , function (e){
+    e.preventDefault();
+    console.log('maja aya ');
+});
 
 // by this link number 3 doesn't work as a link 
 
@@ -140,9 +144,52 @@
 
 let element = document.querySelector('#wrapper');
 element.addEventListener('click' , function(event){
-    // if(event.target.tagName ==='SPAN')
+    // if(event.target.tagName ==='SPAN') // tagName & NodeName - work same 
     if(event.target.nodeName ==='SPAN')
     {
     console.log('hello ' + event.target.textContent)
     }
 });
+
+// if u want to check the time taken to upload all html / document thn follow these steps 
+// go to the web page -> press f12 -> go to network -> press ctrl + r -> in the bottom u get -> document load time  : ' ' 
+
+// for safe practise we make 
+// /* <script> */
+    
+// document. addEventListener('DOMContentLoaded', function(){
+    // ------
+    // ------
+    // ------
+// }
+// </script> 
+// but we not use this 
+// best prctise is 
+
+/* <body>
+<!-- your content -->
+after all code 
+<script>
+
+</script>
+</body>  */
+
+let btn = document.getElementById("btn");
+console.log(btn);
+
+
+// function for random
+function random(number) {
+    return Math.floor(Math.random() * (number + 1));
+  }
+  
+  function changeBody() {
+    let red = random(255);
+    let green = random(255);
+    let blue = random(255);
+    let color = `rgb(${red}, ${green}, ${blue})`;
+    document.body.style.backgroundColor = color;
+  }
+  
+  // add event listener
+  btn.addEventListener("click", changeBody);
