@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    transition: .5s;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    /*background-color: rgb(67, 67, 155);
+    */display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 40%;
+    height: 200px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gpt_btn , .option{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    margin-top: 2%;
+}
+
+#btn{
+    height: 50px;
+    width: 30%;
+    border-radius: 10px ;
+    border:  1px solid blue;
+    /* background-color: black; */
+    /* color: white; */
+    font-size: 1.3rem ;
+}
+.btn{
+    background-color: black;
+    color: white;
+}
+#pink{
+    background-color: pink;
+    color: black;
+}
+.opt2{
+    background-color: Red;
+    color: white;
+}
+.opt3{
+    background-color: Blue;
+    color: white;
+}
+.opt4{
+    background-color: Green;
+}
+.opt5{
+    background-color: Yellow;
+    color: black;
+}
+.opt6{
+    background-color: Orange;
+}
