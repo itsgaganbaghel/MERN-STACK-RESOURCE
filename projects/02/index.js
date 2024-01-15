@@ -69,10 +69,8 @@ document.querySelector('.copy').addEventListener('click' , function(){
     copyColor () ;
 })
 
-
-
 let btn = document.getElementById("btn");
-console.log(btn);
+// console.log(btn);
 
 // // function for random
 // function random(number) {

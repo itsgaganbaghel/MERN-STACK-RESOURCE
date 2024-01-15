@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    height: 100vh;
+    width: 100vw;
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+}
+#btngrp{
+    display: flex;
+    background-color: #fff;
+    padding: 1rem;
+    gap: .5rem;
+}
+.btn{
+    height: 50px;
+    width: 50px;
+    font-size: 24px;
+    background-color: #fff;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#num{
+    border-left: 2px solid rgba(230, 229, 229, 0.592); ;
+    border-right: 2px solid rgba(230, 229, 229, 0.592); ;
+    width: 80px;
+}
