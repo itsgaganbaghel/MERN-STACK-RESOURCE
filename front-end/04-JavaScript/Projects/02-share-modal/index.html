@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increment & Decrement </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <img src="./img/user.jpg" alt="" id="user">
+            <h1>Gagan Baghel</h1>
+            <h3 class="bio"> MERN STACK Web Developer</h3>
+            <div id="btngrp">
+                <div class="btn" id="share" onclick="openModal()">
+                    Share My Profile .
+                    <i class="fa-solid fa-share"> </i>
+                </div>
+                <div class="btn" id="follow"> Follow Me </div>
+            </div>
+        </div>
+
+        <div id="circle" class="pink"></div>
+        <div id="circle" class="purple"></div>
+        
+        <!-- social media tab  -->
+        
+    <div id="card">
+        <div class="heading">
+            <h2>Share My Profile </h2>
+            <i class="fa-solid fa-xmark close" onclick="closeModal()"></i>
+        </div>
+        <div class="subhead"> Share this via </div>
+        
+        <ul class="socialmedia">
+            <li><a href="#" ><i class="fab fa-facebook-f"></i>
+            <li><a href="#" ><i class="fab fa-whatsapp"></i>
+            <li><a href="#" ><i class="fab fa-instagram"></i>
+            <li><a href="#" ><i class="fab fa-telegram"></i>
+            <li><a href="#" ><i class="fab fa-twitter"></i>
+        </ul>
+
+    </div>    
+
+    <div class="overlay"></div>
+</div>
+
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
