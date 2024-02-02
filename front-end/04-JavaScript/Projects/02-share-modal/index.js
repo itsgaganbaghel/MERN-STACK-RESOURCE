@@ -21,10 +21,3 @@
 
 //     // overlay.classList.remove("overlay");
 // // }
-
-const openTrigger =  document.querySelector(".heading");
-const modal = document.querySelector("#card");
-
-const openModal = () => {
-    modal.classList.add("active");
-}

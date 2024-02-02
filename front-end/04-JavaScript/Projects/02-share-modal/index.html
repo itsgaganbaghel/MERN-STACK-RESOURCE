@@ -14,7 +14,7 @@
             <h3 class="bio"> MERN STACK Web Developer</h3>
             <div id="btngrp">
                 <div class="btn" id="share" onclick="openModal()">
-                    Share My Profile .
+                    Share My Profile -  
                     <i class="fa-solid fa-share"> </i>
                 </div>
                 <div class="btn" id="follow"> Follow Me </div>
@@ -27,9 +27,9 @@
         <!-- social media tab  -->
         
     <div id="card">
-        <div class="heading" onclick="openModal()">
-            <h2>Share My Profile </h2>
-            <i class="fa-solid fa-xmark close" onclick="closeModal()"></i>
+        <div class="heading">
+            <h1>Share My Profile </h1>
+            <i class="fa-solid fa-xmark close" id="close" onclick="closeModal()"></i>
         </div>
         <div class="subhead"> Share this via </div>
         
@@ -43,10 +43,29 @@
 
     </div>    
 
-    <div class="overlay"></div>
+    <div class="overlay" onclick="closeModal()"></div>
 </div>
 
     <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+    <!-- <script src="index.js">71</script> -->
+    <script>
+        const open = document.getElementById("card") ;
+        function openModal(){
+            // document.getElementById("card").style.display = "block";
+            open.style.scale = '1';
+            // document.getElementById("card").style.scale = '1';
+            // document.getElementById("wrapper").style.backgroundColor = "#13121283" ;
+            document.getElementById("wrapper").style.backgroundColor = "black" ;
+            document.getElementById("wrapper").style.overlay = "true" ;
+            
+        }
+        
+        function closeModal(){
+            // document.getElementById("card").style.display = "none";
+            open.style.scale = "0";
+            document.getElementById("wrapper").style.backgroundColor = "#256FF1" ;
+
+        }
+    </script>
 </body>
 </html>
