@@ -1,0 +1,48 @@
+*,
+*::after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.7;
+    color: white;
+    background-color:#1f2029 ;
+    min-height: 100vh;
+    overflow-x: none;
+}
+p{
+/* font-family: sans-serif;  -  no use */
+font-weight: 400;
+font-size: 16px;
+line-height: 1.7;
+color: white;
+margin: 0;
+}
+
+#wrapper{
+    position: relative;
+    display: block;
+    width: 100%; 
+    overflow: hidden;
+}
+.section{
+    position: relative;
+    max-width: calc(100%-40px);
+    width: 860px;
+    margin: 0 auto;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    padding: 100px 0;
+
+}
+
+[type="radio"]:checked , [type="radio"]:not(:checked){
+    position: absolute;
+    visibility: hidden;
+}

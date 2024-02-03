@@ -170,9 +170,18 @@ li{
     align-items: center;
     justify-content: center;
 }
-a{
-    color: skyblue;
-    color: black;
+#fb{
+    color: blue;
+}
+#ig{
+    color: rgb(226, 117, 168);
+}
+#whatsapp{
+    color: green;
+}
+#telegram , #tw{
+    color: rgb(128, 208, 249);
+    
 }
 
 /* .overlay {
