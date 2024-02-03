@@ -17,7 +17,7 @@
                     Share My Profile -  
                     <i class="fa-solid fa-share"> </i>
                 </div>
-                <div class="btn" id="follow"> Follow Me </div>
+                <div class="btn" id="follow" onclick="followMeTabOpen()"> Follow Me </div>
             </div>
         </div>
 
@@ -42,6 +42,22 @@
         </ul>
 
     </div>    
+    <div id="followMe">
+        <div class="heading">
+            <h1>Follow Me On</h1>
+            <i class="fa-solid fa-xmark close" id="close" onclick="followMeTabClose()"></i>
+        </div>
+        
+        <ul class="socialmedia">
+            <li><a href="https://www.instagram.com/codebygagan?igsh=OG9xbG4wNnJyZDJo" id="ig" target="_blank"><i class="fab fa-instagram"></i>
+            <li><a href="https://t.me/codebygagan" id="telegram" target="_blank"><i class="fab fa-telegram"></i>
+            <li><a href="https://x.com/itsgaganbaghel?t=WTIn5UlNgWUmo1dmDYPvkg&s=08" target="_blank"  id="tw"><i class="fab fa-twitter"></i></a>
+            <li><a href="https://youtube.com/@Codebygagan?si=4zckcjzX4lBiklin" target="_blank"  id="yt"><i class="fab fa-youtube"></i></a>
+            <li><a href="https://github.com/itsgaganbaghel" target="_blank"  id="github"><i class="fab fa-github"></i></a>
+            <li><a href="https://www.linkedin.com/in/itsgaganbaghel/" target="_blank" id="lkd">in</></a>
+        </ul>
+
+    </div>    
 
     <div class="overlay" onclick="closeModal()"></div>
 </div>
@@ -49,22 +65,28 @@
     <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
     <!-- <script src="index.js">71</script> -->
     <script>
-        const open = document.getElementById("card") ;
+        const openT = document.getElementById("card") ;
+        const followTab = document.getElementById("followMe");
+
         function openModal(){
-            // document.getElementById("card").style.display = "block";
-            open.style.scale = '1';
-            // document.getElementById("card").style.scale = '1';
-            // document.getElementById("wrapper").style.backgroundColor = "#13121283" ;
+            openT.style.scale = '1';
             document.getElementById("wrapper").style.backgroundColor = "black" ;
-            document.getElementById("wrapper").style.overlay = "true" ;
-            
         }
-        
+
         function closeModal(){
-            // document.getElementById("card").style.display = "none";
-            open.style.scale = "0";
+            openT.style.scale = "0";
             document.getElementById("wrapper").style.backgroundColor = "#256FF1" ;
 
+        }
+
+        function followMeTabOpen(){
+            followTab.style.scale = '1';
+            document.getElementById("wrapper").style.backgroundColor = "black";
+        }
+
+        function followMeTabClose(){
+            followTab.style.scale = "0";
+            document.getElementById("wrapper").style.backgroundColor = "#256FF1" ;
         }
     </script>
 </body>
