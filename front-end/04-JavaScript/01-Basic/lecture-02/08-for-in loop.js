@@ -16,7 +16,7 @@ for(let testObject in demoObject){
 
     // console.log(testObject); // print the keys - name & age only 
 
-    // console.slog(demoObject[testObject]); // print the values of keys - john & 30 
+    // console.log(demoObject[testObject]); // print the values of keys - john & 30 
 
     console.log(testObject, demoObject[testObject]); // print both keys and values of the demoObject.
 

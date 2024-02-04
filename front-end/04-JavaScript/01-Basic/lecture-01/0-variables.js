@@ -16,3 +16,6 @@ console.log(z);
 // we cannot change the value of a constant variable once it is assigned . If you try to do so an error will be thrown by JS engine .
 // z = 8; // TypeError: Assignment to constant variable.
 // trying to change the value of const will give an error
+
+
+

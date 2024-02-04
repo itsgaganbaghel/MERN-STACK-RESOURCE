@@ -123,6 +123,7 @@ label.first-color {
     opacity: 1;
     animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   }
+
   .img-wrap.chair-2 {
     background-image: url("./images/chair2.png");
   }
@@ -130,6 +131,7 @@ label.first-color {
     opacity: 1;
     animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   }
+  
   .img-wrap.chair-3 {
     background-image: url("./images/chair3.png");
   }

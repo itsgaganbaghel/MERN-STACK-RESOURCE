@@ -14,7 +14,10 @@ function createRectangle(len, wid){
         }
     }
 };
-console.log(createRectangle(3,5));
+// console.log(createRectangle(3,5));
+
+let Rect01 = (createRectangle(3,5));
+console.log(Rect01);
 
 let newRectangle = createRectangle(5,6);
 console.log(newRectangle);
@@ -23,6 +26,9 @@ console.log(newRectangle.length);
 
 newRectangle.color = 'skyblue';
 console.log(newRectangle);
+
+Rect01.key = "key01"
+console.log(Rect01);
 
 delete newRectangle.length;
 console.log(newRectangle);
