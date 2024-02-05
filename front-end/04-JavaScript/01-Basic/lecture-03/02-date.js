@@ -22,7 +22,9 @@ todaysDate =  new Date("2023-12-30");   // here indexing of months start from 1 
 console.log("todaysDate is : "+ todaysDate);
 
 todaysDate  = new Date("October 13, 2014 11:13:00"); // create a date object from a date string 
-todaysDate  = new Date("Oct 13, 2014 11:13:00"); // create a date object from a date string 
+todaysDate  = new Date("Oct 13, 2014 11:13:00");     // create a date object from a date string 
+todaysDate  = new Date(2023,11,20 ,11 ,30 , 10 ) ;
+todaysDate  = new Date("2023-1-20 11:13") ;
 console.log("todaysDate is : "+ todaysDate);
 
 todaysDate = new Date(2023,11,30,11,7,20)   // yyy,mm,dd,hr,min,s,ms - year-month-day-hours-mint.-second-millisecond 
@@ -62,7 +64,7 @@ console.log(birthday);
 birthday.setYear(2003);
 console.log(birthday);
 
-birthday.setMonth(2); //march
+birthday.setMonth(1); // february
 console.log(birthday);
 
 birthday.setDate(16);
@@ -72,6 +74,6 @@ let demo = Date();
 console.log(demo);
 
 demo = new Date();
-console.log("Today is : " + demo.getDate());
-console.log("Today is : " + demo.getDay());  // week 0-6 {0-sunday ..... 6-saturday1}
+console.log("Today's Date is : " + demo.getDate());
+console.log("Today's Day number is ( 0 to 6 - sunday to saturday) : " + demo.getDay());  // week -  days - 0-6 {0-sunday ..... 6-saturday1}
 

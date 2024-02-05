@@ -57,7 +57,7 @@ function totalSum(a,b){
 // let  randomValue = totalSum(1,3);
 let  randomValue = totalSum(1,3,2,5);
 console.log(randomValue);
-// if to don't want  to use arguments  keyword then we have rest operator (.. .)
+// if we don't want  to use an arguments  keyword then we have rest operator (...)
                 // Rest Operator  syntax = (...)
 
 // it is used for : 
@@ -75,7 +75,7 @@ console.log(randomValue);
 
 // if we have 2 input  and rest of all are arguments 
 function addition(num ,value, ...arg ){ 
-    // after ..arg we can't put any values in the parameters lik - function addition(num ,value, ...arg , demo1 ,demo ) // we get a error in this case 
+    // after ...arg we can't put any values in the parameters lik - function addition(num ,value, ...arg , demo1 ,demo ) // we get a error in this case 
     // console.log(arguments);
     // console.log("num " + num);
     // console.log("value " + value);
@@ -118,36 +118,37 @@ function interest(p,r=5,t=10){ // we start assigning default values from the r t
 //  this is the read only function                 } 
 
 // getter : access properties 
-// setter : chnage or muted properties
+// setter : change or muted properties
 
-// let person1 = {
-//     fname : 'Gagan',
-//     lname : 'Baghel',
-//     get fullName(){
-//         return `${person1.fname} ${person1.lname}`;
-//     },
-//     set fullName(value){
-//         let parts = value.split(' ');
-//         this.fname =parts[0];
-//         this.lname =parts[1];
-//     }
-// };
-// console.log(person1.fullName);  // getter call 
+let person2 = {
+    fname : 'Gagan',
+    lname : 'Baghel',
+    get fullName(){
+        return `${person2.fname} ${person2.lname}`;
+    },
+    set fullName(value){
+        let parts = value.split(' ');
+        this.fname =parts[0];
+        this.lname =parts[1];
+    }
+};
+console.log(person2.fullName);  // getter call 
 
-// console.log(person1.fullName['codebygagn']);  // not working - wrong way 
+// console.log(person2.fullName['codebygagn']);  // not working - wrong way 
+console.log(person2.fullName = 'codebygagn');  // not working - wrong way 
 
-// person1.fullName = 'IG Codebygagan';
-// console.log(person1.fullName);
+person2.fullName = 'IG Codebygagan';
+console.log(person2.fullName);
 
                 // Try and Catch -> Error handling 
 
 // syntax:
 // try {
-//     // code  - it contains the code in which there is a change of occuring an error
-// // }
+    // code  - it contains the code in which there is a change of occurance of an error
+// }
 // catch(e){
 //     alert('you have sent a number in fullName ') ; // custom mssg 
-//     // error handling code
+    // error handling code
 // }
 
 let person1 = {
@@ -158,7 +159,7 @@ let person1 = {
     },
     set fullName(value){
         if(typeof value !== 'string'){
-            throw new Error('You hav not sent a string ');
+            throw new Error('You have not sent a string ');
         }
         let parts = value.split(' ');
         this.fname =parts[0];
@@ -169,6 +170,7 @@ let person1 = {
 try { // if there is any error occur in the try code then it goes to the catch code directly
     person1.fullName = 'IG Codebygagan' ; // print ig codebygagan 
     // person1.fullName = true; // alert - error 
+    // person1.fullName = 1 ,2 ;  // alert - error 
 }
 catch(err) {
     alert(err) ; // err -  is the error that comes from the the get as a string 
@@ -176,6 +178,8 @@ catch(err) {
 }
 // person1.fullName = 'IG Codebygagan';
 console.log(person1.fullName);
+
+
 
 
                             // scope 

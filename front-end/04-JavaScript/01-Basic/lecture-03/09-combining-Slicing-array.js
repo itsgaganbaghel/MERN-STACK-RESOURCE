@@ -9,8 +9,8 @@ let combined = [...array1 , ...array2];
 console.log(combined)
 
 // slice - slice(starting index , ending index); // ending index -1 tak hi print hota hai 
-let slicedArray = array1.slice(1,3).concat(array2.slice(2,5));
-// let slicedArray = array1.slice(1,3).concat(array2.slice(2)); // full slicing 
+// let slicedArray = array1.slice(1,3).concat(array2.slice(2,5));
+let slicedArray = array1.slice(1,3).concat(array2.slice(2)); // full slicing 
 console.log(slicedArray)
 
 // 2nd Method 

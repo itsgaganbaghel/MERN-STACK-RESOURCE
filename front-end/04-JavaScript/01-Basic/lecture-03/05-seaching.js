@@ -13,7 +13,7 @@ if(num.indexOf(3) != -1)
     console.log("Present");
 }
 // good practice 
-console.log(num.includes(1));  // value present or not in the given array
+console.log(num.includes(20));  // value present or not in the given array
 
 console.log(num.indexOf(20, 1) ); // indexof(number , index no. ) in this given index no. is start from the next no. 
 
@@ -45,12 +45,12 @@ console.log(course);
 // variable  = arrayName.find(function(variable){
 //     return vriable.(condition)
 // })
-let lname = courses.find(function(lname){
-    return lname.name === "baghel";
+let lname = courses.find(function(ln){
+    return ln.name === "baghel";
 })
 console.log(lname);
 
-let name = courses.find(function(name){
+let FName = courses.find(function(name){
     return name.no === 1;
 })
-console.log(name);
+console.log(FName);

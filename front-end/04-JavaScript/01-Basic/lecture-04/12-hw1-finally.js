@@ -25,7 +25,7 @@ console.log(person.fullName);
 console.log(person.fullName);
 
 try{
-    person.fullName = "Khushi Patel";
+    person.fullName = "Khushi Varshney";
     // person.fullName = true;
 }
 catch(e){

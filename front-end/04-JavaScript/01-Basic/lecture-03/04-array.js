@@ -23,8 +23,8 @@ console.log(numbers)
 numbers.splice(2 ,0, 10);
 console.log(numbers)
 
-// strat insertion - unshift 
-numbers.unshift(7);
+// start insertion - unshift 
+numbers.unshift(20);
 console.log(numbers)
 
 // delete from starting 
@@ -34,3 +34,39 @@ console.log(numbers);
 // delete from ending
 numbers.pop();
 console.log(numbers);
+
+
+let arr = [1,2,3,4,5];
+// finding the element in the array
+console.log(arr);
+console.log(arr[2]);
+
+// find method returns the first occurance of that element
+for  (let i=0;i<arr.length;i++){
+    if(arr[i]==3){
+        console.log("Element is at position "+i);
+        break;
+    }
+}
+
+// insertion 
+arr.push(2)
+console.log(arr);
+
+arr.unshift(9);
+console.log(arr);
+
+// arr.splice(3,4);
+// console.log(arr);
+
+arr.splice(3,0,3);
+console.log(arr);
+
+arr.pop();
+console.log(arr);
+
+arr.shift();
+console.log(arr);
+
+arr.splice(2,1);
+console.log(arr);

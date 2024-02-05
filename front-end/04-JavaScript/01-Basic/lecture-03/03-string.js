@@ -8,6 +8,10 @@ let str = new String("My name is GAGAN BAGHEl");  // key - create a blank object
 console.log(str);
 console.log(typeof str);  // object
 
+ let str2 = "primitive string";
+ console.log(str2);
+ console.log(typeof str2);   // string
+
 // Properties
 // #1 - Length 
 console.log(str.length);
@@ -35,8 +39,8 @@ console.log(str.endsWith("Priyansh"));
 // #7 - replace 
 console.log(str.replace("GAGAN","Gagan"));
 
-let a = "  Devil  ";
 // #8 - trim 
+let a = "  Devil  ";
 console.log(a);
 console.log(a.trim());  // Devil - remove all whitespace that present before and after of any word
 
