@@ -43,7 +43,7 @@
     // console.log ('I click on the display');
 // }
 // document.addEventListener('click' , print) ;
-// if you want to check or display the all EventListener by - monitor(document)
+// if you want to check or display the all EventListener by - monitorEvent(document)
 // document.removeEventListener('click' , print) ;
 
 // - by this event listener is finally remove 

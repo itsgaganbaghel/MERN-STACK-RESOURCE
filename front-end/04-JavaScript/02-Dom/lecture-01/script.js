@@ -114,7 +114,7 @@ if, we want to add in a specific loction like -
 // // child1.appendChild(content1);
 
 // // newElement.insertAdjacentHTML('beforeend', child1);
-newElement.insertAdjacentHTML('beforeend', "<h3> Before end </h3>");
+newElement.insertAdjacentHTML('beforeend', "<h1> Before end </h1>");
 newElement.insertAdjacentHTML('afterend', "After End ");
 newElement.insertAdjacentHTML("beforebegin" , "Before Begin ");
 newElement.insertAdjacentHTML("afterbegin" , "After Begin ");

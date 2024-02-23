@@ -1,6 +1,6 @@
 let person = {
-    firstName : "Priyash",
-    lastName : "Patel",
+    firstName : "Gagan" ,
+    lastName : 'Baghel',
 
     // Getter
     get fullName()
@@ -22,13 +22,13 @@ let person = {
 }
 
 console.log(person.fullName);
-person.fullName = "Khushi Patel";
-console.log(person.fullName);
+// person.fullName = "Khushi Patel";
+// console.log(person.fullName);
 
 try{
-    person.fullName = true;
+    person.fullName = "Khushi Varshney";  
 }
 catch(e){
-    // console.log(e);
-    alert(e);
+    console.log(e);
+    // alert(e);
 }

@@ -105,7 +105,7 @@
 
 // meraPromise3.then((value)  => { console.log(value)}, (error) => {console.log("Recieved an Error")});
  
-// there are 3 task  t1,t2,t3 all 3 are depend with each oher t1 -> t2 -> t3 lik this
+// there are 3 task  t1,t2,t3 all 3 are depend with each oher t1 -> t2 -> t3 like this
 
 // let wadaa1 = new Promise ( function ( resolve , reject) {
 //     setTimeout(() => {
