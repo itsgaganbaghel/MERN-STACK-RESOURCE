@@ -23,6 +23,7 @@
     box-shadow: 5px 5px 7px 0px #0000003f;
     position: relative;
     z-index: 1;
+    /* border: 2px solid transparent; */
 }
 
 .btn-pink::before{
@@ -37,6 +38,9 @@
     transition: all .8s;
     transform-origin: left ;
     z-index: -1;
+    /* border: 2px solid yellow;
+    border: none; */
+    cursor: pointer;
 }
 
 .btn-pink:hover::before{

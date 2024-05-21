@@ -11,7 +11,7 @@ package.json ->
   },
 
 
-create -> stle.css and write 
+create -> style.css and write 
 
 @tailwind base;
 @tailwind components;

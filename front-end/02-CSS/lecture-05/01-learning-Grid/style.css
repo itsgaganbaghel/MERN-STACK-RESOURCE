@@ -15,11 +15,13 @@
     height: 70vh ;
     width: 80vw;
     margin: auto;
+
     display: grid;
     grid-template-rows: 50px 1fr 80px;
     grid-template-columns: 20% 80%;
     gap: 2px;
-    
+    row-gap: 20px;
+    column-gap: ;
     grid-template-areas: 
     "hd hd"
     "sd mn"

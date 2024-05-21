@@ -1,174 +1,174 @@
-//                          lecture - 03
+// //                          lecture - 03
 
-// maths built in methods - max , mix abs , round etc 
-// Math object 
+// // maths built in methods - max , mix abs , round etc 
+// // Math object 
 
-// Properties 
-// #1 - Euler Number 
-console.log(Math.E);
+// // Properties 
+// // #1 - Euler Number 
+// console.log(Math.E);
 
-// #2 - PI 
-console.log(Math.PI);
+// // #2 - PI 
+// console.log(Math.PI);
 
-// #3 - Log2E
-console.log(Math.LOG2E);
+// // #3 - Log2E
+// console.log(Math.LOG2E);
     
 
-// Methods 
+// // Methods 
 
-// #1 - Round 
-console.log(Math.round(12.79)); // 13
-console.log(Math.round(12.49)); // 12
+// // #1 - Round 
+// console.log(Math.round(12.79)); // 13
+// console.log(Math.round(12.49)); // 12
 
-// #2 - Ceil 
-console.log(Math.ceil(12.79)); //13
+// // #2 - Ceil 
+// console.log(Math.ceil(12.79)); //13
 
-// #3 - Floor 
-console.log(Math.floor(12.79)); //12
+// // #3 - Floor 
+// console.log(Math.floor(12.79)); //12
 
-// #4 - Random 
-console.log(Math.random()); //....................
+// // #4 - Random 
+// console.log(Math.random()); //....................
 
-// #5 - min 
-console.log(Math.min(10,12)); //10
+// // #5 - min 
+// console.log(Math.min(10,12)); //10
 
-// #6 - Random 
-console.log(Math.max(10,12)); //12
+// // #6 - Random 
+// console.log(Math.max(10,12)); //12
 
-// #7 - pow 
-console.log(Math.pow(2,10)); //1024
-
-
-// Returning a random integer between two bounds
-// LowerBound - 40 
-// Upper Bound - 100
-console.log(Math.round(Math.random() * (100 - 40)) + 40);
+// // #7 - pow 
+// console.log(Math.pow(2,10)); //1024
 
 
-// Date Object 
-// date in js - we can directly refer from internet - mdn 
-// in this , indexing is start from 0 for month
-// get  - output
-// Set - input 
-// for example 
-// let today = new Date();
-// console.log(today);
-
-let date = Date(); //Date in a string formate
-console.log(date);
-
-date = new Date();
-console.log(date);
-
-date = new Date(10);
-console.log(date);
-
-date = new Date(2003,3,16); // indexing is start from 0 for month
-console.log(date);
-
-date = new Date("2003-05-20");
-console.log(date);
-
-date = new Date("2003-04-16T11:55:21Z");
-console.log(date.toString());
-console.log(date.toDateString());
-console.log(date.toTimeString());
-console.log(date.toISOString());
-console.log(date.toUTCString());
-console.log(date.toJSON());
-console.log(date.toLocaleString());
-console.log(date.toLocaleDateString());
-console.log(date.toLocaleTimeString());
+// // Returning a random integer between two bounds
+// // LowerBound - 40 
+// // Upper Bound - 100
+// console.log(Math.round(Math.random() * (100 - 40)) + 40);
 
 
-// Get MEthods 
-console.log(date.getFullYear());
-console.log(date.getDay());
-console.log(date.getMonth());
-console.log(date.getHours());
-console.log(date.getMinutes());
-console.log(date.getSeconds());
+// // Date Object 
+// // date in js - we can directly refer from internet - mdn 
+// // in this , indexing is start from 0 for month
+// // get  - output
+// // Set - input 
+// // for example 
+// // let today = new Date();
+// // console.log(today);
+
+// let date = Date(); //Date in a string formate
+// console.log(date);
+
+// date = new Date();
+// console.log(date);
+
+// date = new Date(10);
+// console.log(date);
+
+// date = new Date(2003,3,16); // indexing is start from 0 for month
+// console.log(date);
+
+// date = new Date("2003-05-20");
+// console.log(date);
+
+// date = new Date("2003-04-16T11:55:21Z");
+// console.log(date.toString());
+// console.log(date.toDateString());
+// console.log(date.toTimeString());
+// console.log(date.toISOString());
+// console.log(date.toUTCString());
+// console.log(date.toJSON());
+// console.log(date.toLocaleString());
+// console.log(date.toLocaleDateString());
+// console.log(date.toLocaleTimeString());
 
 
-// Set Value 
-let birthday = new Date();
-console.log(birthday);
-
-birthday.setYear(2003)
-console.log(birthday);
-
-birthday.setMonth(3);
-console.log(birthday);
-
-birthday.setDate(16);
-console.log(birthday);
+// // Get MEthods 
+// console.log(date.getFullYear());
+// console.log(date.getDay());
+// console.log(date.getMonth());
+// console.log(date.getHours());
+// console.log(date.getMinutes());
+// console.log(date.getSeconds());
 
 
+// // Set Value 
+// let birthday = new Date();
+// console.log(birthday);
 
-date = new Date(2003,3,16);
-console.log(date);
+// birthday.setYear(2003)
+// console.log(birthday);
+
+// birthday.setMonth(3);
+// console.log(birthday);
+
+// birthday.setDate(16);
+// console.log(birthday);
 
 
-// String - are of 2 types ie primitive and Object
-// Primitive string is a sequence of characters enclosed by double or single quotes .
-// Object type string has properties like charAt , indexOf , slice , substring , concat , replace , match , search , split , toLower
 
-// There are String Object can be created by new keyword and String Constructor 
-let str = new String("My name is Priyansh");
-console.log(str);
-console.log(typeof str);
+// date = new Date(2003,3,16);
+// console.log(date);
 
-// Properties
-// #1 - Length 
-console.log(str.length);
 
-// Methods 
-// #1 - lowercase 
-console.log(str.toLocaleLowerCase());
+// // String - are of 2 types ie primitive and Object
+// // Primitive string is a sequence of characters enclosed by double or single quotes .
+// // Object type string has properties like charAt , indexOf , slice , substring , concat , replace , match , search , split , toLower
 
-// #2 - uppercase 
-console.log(str.toUpperCase()); 
+// // There are String Object can be created by new keyword and String Constructor 
+// let str = new String("My name is Priyansh");
+// console.log(str);
+// console.log(typeof str);
 
-// #3 - at 
-console.log(str.charAt(4));
+// // Properties
+// // #1 - Length 
+// console.log(str.length);
 
-// #4 - charCodeAt 
-console.log(str.charCodeAt(4));
+// // Methods 
+// // #1 - lowercase 
+// console.log(str.toLocaleLowerCase());
 
-// #5 - startwith 
-console.log(str.startsWith("My"));
+// // #2 - uppercase 
+// console.log(str.toUpperCase()); 
 
-// #6 - endsWith 
-console.log(str.endsWith("Priyansh"));
+// // #3 - at 
+// console.log(str.charAt(4));
 
-// #7 - replace 
-console.log(str.replace("Priy","Riy"));
+// // #4 - charCodeAt 
+// console.log(str.charCodeAt(4));
 
-let a = "  Devil  ";
-// #8 - trim 
-console.log(a);
-console.log(a.trim());
+// // #5 - startwith 
+// console.log(str.startsWith("My"));
 
-// primitive string 
-let name = 'gagan'; 
-// primitive string convert into Object
-// name. 
-let lastname = new String('baghel');
-// we can perform many functionalities in it that is ,
-// lastname.length
-// lastname.includes
-// lastname.replace (before , after)
-// lastname[index-No.]
+// // #6 - endsWith 
+// console.log(str.endsWith("Priyansh"));
 
-let mssg1 = "this is my 3rd js video for learning basics of js."
-let word = mssg1.split(' ');
-console.log(word);
+// // #7 - replace 
+// console.log(str.replace("Priy","Riy"));
 
-// Template literals - use for rearrange the sentence line patters, but we do not add \n , etc directly.
-// we can ue '\' for new line  as well as we can use template literal by adding back slash. (` `)
-let mssging = `This is a example for showing the use of 
-template literals `;
-console.log(mssging);
+// let a = "  Devil  ";
+// // #8 - trim 
+// console.log(a);
+// console.log(a.trim());
+
+// // primitive string 
+// let name = 'gagan'; 
+// // primitive string convert into Object
+// // name. 
+// let lastname = new String('baghel');
+// // we can perform many functionalities in it that is ,
+// // lastname.length
+// // lastname.includes
+// // lastname.replace (before , after)
+// // lastname[index-No.]
+
+// let mssg1 = "this is my 3rd js video for learning basics of js."
+// let word = mssg1.split(' ');
+// console.log(word);
+
+// // Template literals - use for rearrange the sentence line patters, but we do not add \n , etc directly.
+// // we can ue '\' for new line  as well as we can use template literal by adding back slash. (` `)
+// let mssging = `This is a example for showing the use of 
+// template literals `;
+// console.log(mssging);
 
 // Arrays 
 // Adding new Elements 
@@ -182,7 +182,7 @@ let numbers = [1, 2 ,4 ,5, 'gagan' ]
 // ie in js array contain homo as well as hetero items 
 
 // access item from Array
-console.log(numbers)
+// console.log(numbers)
 
 // Insertion of an item in an array
 // end - push 
@@ -194,10 +194,11 @@ console.log(numbers)
 numbers.splice(2 ,0, 10);
 console.log(numbers)
 
-// end - unshift 
+// start - unshift 
 numbers.unshift(7);
 console.log(numbers)
 
+// delete 
 numbers.shift();
 console.log(numbers)
 
@@ -217,7 +218,7 @@ console.log(numbers)
 // good practice 
 console.log(numbers.includes(4)); 
 
-// console.log(numbers.indexOf(9, 6) );
+console.log(numbers.indexOf(9, 6) );
 
 // for reference - we use callback function
 let courses = [
@@ -237,8 +238,8 @@ console.log(courses.includes({no:1 , name:"gagan"}));
 // inside the outer function to some kind Of routine action.
 
 // normal way / notation 
-let course = courses.find(function(course){
-    return course.name === 'gagan'
+let course = courses.find(function(c){
+    return c.name === 'gagan'
 })  
 
 console.log(course);
@@ -259,7 +260,7 @@ let array = [1,2,3,4,5,6,7]
 array.pop();
 console.log(array)
 
-// begining - shift ()
+// beginning - shift ()
 array.shift();
 console.log(array)
 
@@ -268,8 +269,11 @@ array.splice(2,1);
 console.log(array)
 
 // Empty array 
-let arrayNew = array ;
-arrayNeww = [] ;
+
+let  arrays = [1,2,3,4,5,6,7] ;
+
+let arrayNew = arrays ;
+arrayNew = [] ;
 console.log(arrayNew)
 // in this the array is declared to blank [] and the original values are remove by garbage collector . 
 // this is not a appropriate method of empty the array 
@@ -296,6 +300,9 @@ let slicedArray = array1.slice(1,3).concat(array2.slice(2,5));
 // let slicedArray = array1.slice(1,3).concat(array2.slice(2)); // full slicing 
 console.log(slicedArray)
 
+console.log(array1.slice(1,3))  // returning a new array 
+console.log(array1)
+
 // 2nd Method 
 let slicedArray1 = array1.slice(2).concat([...array2].slice(2))
 console.log(slicedArray1)
@@ -319,35 +326,39 @@ let arr = [3,5,6];
 for(let key of arr){
     console.log(key*2)
 };
+
 arr.forEach(function(key){console.log(key/2);});
 
 // convert into arrow function 
 arr.forEach(value => console.log(value/2));
 
 // Joining Arrays 
-let joinArr = ['I','love', 'to','code'];
+let joinArr = ['I','love', 'to','code' , 1 ,3,4];
 let joined = joinArr.join(' ');
 console.log(joined)
 
-// spilit an array 
+// split an array 
 let mssg = "Now I love to code in JS";
 let splitMsg = mssg.split(" ");
 console.log(splitMsg)
+console.log(typeof splitMsg)
 
 // join 
 let joinMssg = splitMsg.join(' ');
 console.log(joinMssg)
+console.log( typeof joinMssg)
 
 // Reverse an Array
 let reverseArr = [1,2,3,4,5];
 reverseArr.reverse()
 console.log(reverseArr)
 
-// sorting Arraay 
+// sorting Array 
 let sortArr = [5,7,8,9,1,3];
 sortArr.sort();
 console.log(sortArr);
 
+let str = "Hello"
 // Filtering Array
 let filterArr = [1,2,3,4,5,0,-1,-2,-3,-4,-5];
 let no = filterArr.filter(function(value){
@@ -361,7 +372,7 @@ console.log(num);
 // Mapping Arrays - agar apko map ki each element of array to something else. ie., somthing is connected with some value 
 let mapArray = [20,35,60,78,10];
 let items = mapArray.map(function(value){
-    return 'student_marks: ' + value;
+    return 'student_marks: ' + value; 
 })
 console.log(items);
 // convert into arrow function
@@ -377,7 +388,33 @@ console.log(mapObjCreation);
 
 // arrow function : 
 let mapObjArrowFunction = num.map(value => {
-    return {poitive_numbers : value ,
+    return {positive_numbers : value ,
         double_numbers  : value * 2 };
 });
 console.log(mapObjArrowFunction);
+
+let mapArray2 = [ 1,2,34,5,1] ;
+
+let ss = mapArray2.forEach( (el) => {
+    return el += 1 ;
+})
+
+console.log(ss)
+
+
+/*
+? Reduce - it takes an callback function and return the output 
+* syntax - arrayReference.reduce((accumulator , value , i , array ) => {
+
+} , Initial value of accumulator (0))
+
+! for example - sum of items 
+*/
+
+const shoppingCard = [100,200,300,400,500];
+const totalPrice = shoppingCard.reduce((acc , v , i , arr) =>{
+    acc += v ;
+    return acc ;
+} , 0 )
+
+console.log(totalPrice)

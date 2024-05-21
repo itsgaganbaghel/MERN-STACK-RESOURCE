@@ -3,8 +3,8 @@ console.log("Dom Lecture - 03");
 
 /** 
 ** Performace : 
-            - measure spee₫of code 
-            - how to write effecient & performing code 
+            - measure speed of code 
+            - how to write efficient & performing code 
             - event loop
 **/
 // adding 100 para
@@ -46,8 +46,8 @@ for this we use performance.now() -  we add one in starting and one in the endin
 
 /*
 --------- Reduce the time - optimizing - when we have to update dom multiple time / every iteration then we use this method -----
-when we add first para in the document then 2 things occurrs - 
-1. Reflow - new tag ya element ka ko add karte ha tab jo jo mathematical calculation hoti hai like , kaha rakhna ha kese rakhna hai 
+when we add first para in the document then 2 things occurs - 
+1. Reflow - new tag ya element ko add kar ta ha tab jo jo mathematical calculation ho ti hai like , knaha rakhna ha kese rakhna hai 
 2. Repaint - After update structure ko pixel by pixel represent karna display pr  - drawing pixel to the display 
 for all para both step occurs all the time 
 
@@ -142,7 +142,7 @@ function b (){            // 2
  call stack :
 
  b();                      // out from the call stack 
- console.log('hi')        // print and go back to the 4 AND then b() get out from the call stck 
+ console.log('hi')        // print and go back to the 4 AND then b() get out from the call stack 
  a();                     // 1 - execute a();
  console.log('hello')    // print and move to the a();
  b();                   // 4 - execute b() ;

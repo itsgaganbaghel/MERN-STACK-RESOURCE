@@ -110,7 +110,7 @@ function switchTab(clickedTab){
             if(navigator.geolocation){
                 navigator.geolocation.getCurrentPosition(showPosition);
             }else{
-                // h.w - show an alert for request 
+                //show an alert for request 
             }
         }
         function showPosition(){

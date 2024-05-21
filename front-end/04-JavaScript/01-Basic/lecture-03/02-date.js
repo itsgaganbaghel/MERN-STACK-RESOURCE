@@ -6,6 +6,7 @@
 // for example 
 // let today = new Date();
 // console.log(today);
+// console.log(Date.now()) // tell the milliseconds b/w the 1st jan 1970 to current date
 
 let todaysDate = Date();
 console.log("todaysDate is: " + todaysDate);
@@ -13,9 +14,11 @@ console.log("todaysDate is: " + todaysDate);
 // new Date() creates a date object with the current date and time:
 
 todaysDate = new Date();
+console.log(typeof todaysDate);
 console.log("todaysDate is: " + todaysDate);
 
 todaysDate = new Date(2023,11,30);
+console.log(typeof todaysDate);
 console.log("todaysDate is: " + todaysDate);
 
 todaysDate =  new Date("2023-12-30");   // here indexing of months start from 1 to 12 as normally used

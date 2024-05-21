@@ -26,17 +26,17 @@ console.log('demo');
 
 // types of variables 
 
-// 1. ) pimitive data type - 
+// 1. ) primitive data type - 
 // 1. string - 'gagan'
 // 2. number - 1,2,3....
 // 3. Boolean - true / false 
-// 4. undefined - value is not intialised
+// 4. undefined - value is not initialized
 // 5. null - NaN 
 
 // data typing
-// basically in js we can initialied multi value for 1 variable
+// basically in js we can initialized multi value for 1 variable
 
-// 2.) referance 
+// 2.) reference 
 // 1. array-[]
 // 2. object-()
 // 3. function-{} 

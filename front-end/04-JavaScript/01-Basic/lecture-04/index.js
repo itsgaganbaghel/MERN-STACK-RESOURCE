@@ -1,6 +1,6 @@
 console.log("Lecture  - 04")
 
-// functions : a piece eof code / block of code that can be re-use for fulfillment of a specific Task
+// functions : a piece of code / block of code that can be re-use for fulfillment of a specific Task
 // why ? : Reducing the size of the code {buggy , bulky reduce}
 // syntax:
 // function declaration 
@@ -58,12 +58,13 @@ function totalSum(a,b){
 let  randomValue = totalSum(1,3,2,5);
 console.log(randomValue);
 // if we don't want  to use an arguments  keyword then we have rest operator (...)
-                // Rest Operator  syntax = (...)
+               
+//* Rest Operator  syntax = (...)
 
 // it is used for : 
 // it will take all the remaining parameter and put into array.
 
-// it is not a spread operator (...), it is used for concatenate of an array 
+//* it is not a spread operator (...), it is used for concatenate of an array 
 // Spread Operator  syntax = ...
 // in this the output is an array  
 
@@ -103,13 +104,15 @@ function interest(p,r=5,t=10){ // we start assigning default values from the r t
  }
  console.log(interest(200));
 
+
+
+ 
  let person = {
     fname : 'Gagan',
     lname : 'Baghel'
  }
  console.log(person);
 
-                                                // {
  // this is the read only function
  function fullName(){
     return `${person.fname} ${person.lname}`;
@@ -135,7 +138,7 @@ let person2 = {
 console.log(person2.fullName);  // getter call 
 
 // console.log(person2.fullName['codebygagn']);  // not working - wrong way 
-console.log(person2.fullName = 'codebygagn');  // not working - wrong way 
+console.log(person2.fullName = 'codebygagn');  
 
 person2.fullName = 'IG Codebygagan';
 console.log(person2.fullName);
@@ -189,4 +192,4 @@ console.log(person1.fullName);
 
 // in function  :
 // let - scope is - local 
-// var - scope is - global 
+// var - scope is - local 

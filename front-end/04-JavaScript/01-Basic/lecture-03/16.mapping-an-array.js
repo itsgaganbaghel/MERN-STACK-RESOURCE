@@ -11,7 +11,7 @@ console.log(item);
 // value ki jaga - kuch bhi likh shakte hai . 
 let num = [1,2,3,4,5]
 let mapObjCreation = num.map(function(value){
-    return {poitive_numbers : value ,
+    return {positive_numbers : value ,
             double_numbers  : value * 2 };
 }) ;
 console.log(mapObjCreation);
@@ -22,3 +22,18 @@ let mapObjArrowFunction = num.map(value => {
         double_numbers  : value * 2 };
 });
 console.log(mapObjArrowFunction);
+
+// let  x = function(){
+//     // return 2 ;
+//     console.log('2');
+// }
+
+// let x = () => 25 ;
+let x = (a) => {
+    console.log(2);
+    return 2 ;
+}
+
+
+console.log(x);
+console.log(x());

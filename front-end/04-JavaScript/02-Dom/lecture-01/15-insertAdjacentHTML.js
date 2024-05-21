@@ -8,11 +8,16 @@ child1.appendChild(content1);
 
 // As a Element we can send our element 
 parent.insertAdjacentElement('beforeend',child1);
+// parent.insertAdjacentElement('afterend',child1);
 
 
 let child2 = document.createElement('li');
-let content2 = document.createTextNode("Before Begin");
+let content2 = document.createTextNode(" ");
 child2.appendChild(content2);
 
-// As a HTML SEnd - using stirng 
-parent.insertAdjacentHTML('beforebegin','<li>BEfore Begin</li>')
+// As a HTML SEnd - using string 
+parent.insertAdjacentHTML('beforebegin','<li>Before Begin</li>')
+
+parent.insertAdjacentHTML('afterbegin','<li>After Begin</li>')
+
+parent.insertAdjacentHTML('afterend','<li>After end</li>')

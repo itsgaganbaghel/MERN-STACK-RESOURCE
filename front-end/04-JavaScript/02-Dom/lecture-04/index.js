@@ -3,6 +3,10 @@
 //    console.log('third') 
 // }, 3000);
 
+settimeout( () => {
+
+} , 3000);
+
 // // synchoronus code 
 // function syn(){
 //     console.log("first");
@@ -15,9 +19,9 @@
 
             /* ----------- API (Application Programming Interface) -----------------
  * Interface -  
-            me <==> sbi wale uncle <==> locker -- The medium through which  2 software component communicate with each other
+            me[self] <= go to => SBI Bank wale uncle <= go to => locker -- The medium through which  2 software component communicate with each other
 
-* Features of Asyn code  
+* Features of Async code  
 1. clean & concise 
 2. better error handling
 3. Easier Bugging 
@@ -25,8 +29,8 @@
 
 * Promises - 
             promise can be full fill or not i.e., yes or no 
-            we use promises when we want do/perform  multiple/parrlell function together
-* Asyn Code - 
+            we use promises when we want do/perform  multiple parallel function together
+* Async Code - 
             ( giving task and do other work till given task is not full filled )
 
 */
@@ -37,13 +41,13 @@
 //     resolve(1998);
 // } ) ;
 
-// // output - Promise {<fulfilled>: 1998}
+// output - Promise {<fulfilled>: 1998}
 
 // // 2. Reject 
 // let myPromise = new Promise(function(resolve , reject){
 //     console.log("promise that reject ")
 //     reject("this promise is not resolve ")          // simple way 
-//     reject(new Error("bhaiya error aya hai ") )     // best practise - because anything will rejected when there is an error in the code 
+//     reject(new Error("bhaiya error aya hai ") )     // best practice - because anything will rejected when there is an error in the code 
 // })
 // // output - Promise {<rejected>: 'this promise is not resolve '} 
 
@@ -56,7 +60,7 @@
 //     setTimeout(() => {
 //         console.log("time out text ")
 //     }, 2000);
-//     resolve(1998);  // explictely we mark that this promise is full filld and marked as resolve 
+//     resolve(1998);  // explicitly we mark that this promise is full filled and marked as resolve 
 // } ) ;
 
 // console.log("Asyn Code  ")
@@ -64,23 +68,24 @@
 /* we use promise for parallaly/Background execution i.e., we give background call any function / piec of code 
 
 * promise hav only  2 cases 
-1. fail  - promise not fullfuilled   - handle by - catch ()
-2. succes - promise is full filled   - handle by - then ()
+1. fail    - promise not full filled   - handle by - catch ()
+2. Success - promise is full filled    - handle by - then ()
 
 
 */
 // 1. handle promise when it fullfilled 
-// let meraPromise1 = new Promise(function(resolve , reject ){
-//     setTimeout(() => 
-//     {
-//         console.log("Resolve set time out text ")
-//     }, 
-//     2000);
-//     // resolve("this promise is full filled ");
-//     resolve(13456789);
-// });
-// meraPromise1.then((value) => { console.log(`the value of the promsie is ${value}` );// console.log(value);
-// }) ;
+let meraPromise1 = new Promise(function(resolve , reject ){
+    setTimeout(() => 
+    {
+        console.log("Resolve set time out text ")
+    }, 
+    2000);
+    // resolve("this promise is full filled ");
+    resolve(13456789);
+});
+meraPromise1.then((value) => { console.log(`the value of the promises is ${value}` );
+console.log(value);
+}) ;
 
 
 // // 2. handle when promise is not fullfilled 
@@ -193,7 +198,7 @@ Square brackets hold arrays
 
 * fetch (" " , ( )) - get call
 * fetch ("url" , (options))  - post call 
-option - are the authentification key for id confirmation for  distingues between paid user from free user 
+option - are the authentication key for id confirmation for  distinguish between paid user from free user 
 
 fetch("url" , )
 */

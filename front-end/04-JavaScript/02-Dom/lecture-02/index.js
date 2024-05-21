@@ -48,11 +48,11 @@
 
 // - by this event listener is finally remove 
 
-// remove event listner - for this we have to follow or satisfied all 3 condition  that is 
+// remove event listener - for this we have to follow or satisfied all 3 condition  that is 
 // 1- The event type must be the same as what you used to add it.
 // 2- The callback must be the exact function object (not a copy)
 // 3- If you added the event listener with options, then you need to include those options too.
-// same type , same target , same function 
+//* same type , same target , same function 
 
 // the event object 
 // const content  =  document.querySelector('#p1');
@@ -164,7 +164,7 @@ element.addEventListener('click' , function(event){
 // }
 // </script> 
 // but we not use this 
-// best prctise is 
+// best practice is 
 
 /* <body>
 <!-- your content -->
